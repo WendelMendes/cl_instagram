@@ -7,7 +7,7 @@
     font-size: 14px;
 }
 
-body{
+main{
     width: 100%;
     min-height: 100vh;
     background-color: rgb(243, 243, 243);
@@ -31,7 +31,7 @@ body{
 }
 
 .container-left img{
-    height: 50rem;
+    height: 44rem;
 }
 
 .container-right{
@@ -39,7 +39,7 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 50%;
+    min-width: 40%;
     min-height: 34rem;
 }
 
@@ -79,11 +79,20 @@ body{
     color: white;
     padding: 8px;
     border-radius: 4px;
+    font-weight: bold;
+}
+
+.instagram-login:hover{
+    background-color: #44a3e2;
 }
 
 .instagram-logout{
     color: #0095f6;
     margin-top: 1rem;
+}
+
+.instagram-logout:hover{
+    text-decoration: underline;
 }
 
 .not-account{
@@ -92,6 +101,10 @@ body{
 
 .link-color{
     color: #0095f6;
+}
+
+.link-color:hover{
+    text-decoration: underline;
 }
 
 .get-the-app{
@@ -125,3 +138,48 @@ body{
     background-image: url('/cl_instagram/assets/images/googleplay-button.png');
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: lightgray;
+}
+/*******************************************************/
+
+@media (max-width: 1024px){
+    .container-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    main{
+        background-color: white;
+    }
+    
+    .container-wrapper{
+        width: 90%;
+    }
+
+    .container-left{
+        display: none;
+    }
+
+    .container-right{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px dashed transparent;
+    }
+}
